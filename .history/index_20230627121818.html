@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your One-Page Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Main content -->
+  <main>
+    <section id="section1" class="py-5">
+      <div class="container">
+        <h1>Select a Tea</h1>
+
+        <!-- Recipe size input -->
+        <div class="mb-3">
+          <label for="recipeSize" class="form-label">Recipe Size (oz):</label>
+          <input type="number" class="form-control" id="recipeSize" value="16">
+        </div>
+
+        <!-- Air button -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#airCollapse"
+          aria-expanded="false" aria-controls="airCollapse">
+          Air
+        </button>
+        <div class="collapse mt-3" id="airCollapse">
+          <div class="card card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Quantity (oz)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dandelion Leaf</td>
+                  <td class="ingredientQty" data-ingredient="dandelionLeaf" data-base-quantity="4">4</td>
+                </tr>
+                <tr>
+                  <td>Borage</td>
+                  <td class="ingredientQty" data-ingredient="borage" data-base-quantity="3">3</td>
+                </tr>
+                <tr>
+                  <td>Peppermint Leaf</td>
+                  <td class="ingredientQty" data-ingredient="peppermintLeaf" data-base-quantity="3">3</td>
+                </tr>
+                <tr>
+                  <td>Lavender</td>
+                  <td class="ingredientQty" data-ingredient="lavender" data-base-quantity="1">1</td>
+                </tr>
+                <tr>
+                  <td>Lemongrass</td>
+                  <td class="ingredientQty" data-ingredient="lemongrass" data-base-quantity="3">3</td>
+                </tr>
+                <tr>
+                  <td>Honeysuckle</td>
+                  <td class="ingredientQty" data-ingredient="honeysuckle" data-base-quantity="2">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Aphorditea button -->
+        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#aphorditeaCollapse" aria-expanded="false" aria-controls="aphorditeaCollapse">
+          Aphorditea
+        </button>
+        <div class="collapse mt-3" id="aphorditeaCollapse">
+          <div class="card card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Quantity (oz)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dehydrated Apples</td>
+                  <td class="ingredientQty" data-ingredient="dehydratedApples" data-base-quantity="3">3</td>
+                </tr>
+                <tr>
+                  <td>Rose Petals</td>
+                  <td class="ingredientQty" data-ingredient="rosePetals" data-base-quantity="4">4</td>
+                </tr>
+                <tr>
+                  <td>Rosehips</td>
+                  <td class="ingredientQty" data-ingredient="rosehips" data-base-quantity="3">3</td>
+                </tr>
+                <tr>
+                  <td>Linden</td>
+                  <td class="ingredientQty" data-ingredient="linden" data-base-quantity="2">2</td>
+                </tr>
+                <tr>
+                  <td>Oregano</td>
+                  <td class="ingredientQty" data-ingredient="oregano" data-base-quantity="1">1</td>
+                </tr>
+                <tr>
+                  <td>Hawthorn Berries</td>
+                  <td class="ingredientQty" data-ingredient="hawthornBerries" data-base-quantity="3">3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Template button -->
+        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#templateCollapse" aria-expanded="false" aria-controls="templateCollapse">
+          Template Tea
+        </button>
+        <div class="collapse mt-3" id="templateCollapse">
+          <div class="card card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Quantity (oz)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ingredient 1</td>
+                  <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="1">1</td>
+                </tr>
+                <tr>
+                  <td>Ingredient 2</td>
+                  <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="2">2</td>
+                </tr>
+                <tr>
+                  <td>Ingredient 3</td>
+                  <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="3">3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    // Recipe size functionality
+    const ingredientQtyElements = document.querySelectorAll('.ingredientQty');
+    const recipeSizeInput = document.getElementById('recipeSize');
+
+    recipeSizeInput.addEventListener('input', function () {
+      const recipeSize = Number(recipeSizeInput.value);
+      ingredientQtyElements.forEach(function (element) {
+        const baseQuantity = Number(element.dataset.baseQuantity);
+        const newQuantity = (recipeSize / 16) * baseQuantity;
+        element.textContent = newQuantity.toFixed(2);
+      });
+    });
+  </script>
+</body>
+
+</html>

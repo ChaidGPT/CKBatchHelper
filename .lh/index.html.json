@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 44,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -180,6 +180,10 @@
                 {
                     "date": 1687895763950,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n             <button class=\"btn btn-primary w-100\" type=\"button\" data-bs-toggle=\"collapse\"\r\n               data-bs-target=\"#aquariusCollapse\" aria-expanded=\"false\" aria-controls=\"aquariusCollapse\">\r\n               Aquarius \r\n             </button>\r\n-            <div class=\"collapse mt-3\" id=\"templateCollapse\">\r\n+            <div class=\"collapse mt-3\" id=\"aquariusCollapse\">\r\n               <div class=\"card card-body\">\r\n                 <table class=\"table\">\r\n                   <thead>\r\n                     <tr>\r\n"
+                },
+                {
+                    "date": 1687896005902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n <head>\r\n   <meta charset=\"UTF-8\">\r\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-  <title>Your One-Page Website</title>\r\n+  <title>The Cat and Kettle Recipe Helper</title>\r\n   <!-- Bootstrap CSS -->\r\n   <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\r\n     integrity=\"sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM\" crossorigin=\"anonymous\">\r\n </head>\r\n"
                 }
             ],
             "date": 1687887063545,

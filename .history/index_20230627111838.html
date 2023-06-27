@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your One-Page Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Main content -->
+  <main>
+    <section id="section1" class="py-5">
+      <div class="container">
+        <h1>Select a Tea</h1>
+        <label for="recipeSize">Recipe Size (oz):</label>
+        <input type="number" id="recipeSize" min="1" value="16" step="1">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#airCollapse"
+          aria-expanded="false" aria-controls="airCollapse">
+          Air
+        </button>
+        <div class="collapse mt-3" id="airCollapse">
+          <div class="card card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Quantity (oz)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dandelion Leaf</td>
+                  <td id="dandelionLeafQty">4</td>
+                </tr>
+                <tr>
+                  <td>Borage</td>
+                  <td id="borageQty">3</td>
+                </tr>
+                <tr>
+                  <td>Peppermint Leaf</td>
+                  <td id="peppermintLeafQty">3</td>
+                </tr>
+                <tr>
+                  <td>Lavender</td>
+                  <td id="lavenderQty">1</td>
+                </tr>
+                <tr>
+                  <td>Lemongrass</td>
+                  <td id="lemongrassQty">3</td>
+                </tr>
+                <tr>
+                  <td>Honeysuckle</td>
+                  <td id="honeysuckleQty">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#otherCollapse"
+          aria-expanded="false" aria-controls="otherCollapse">
+          Other Tea
+        </button>
+        <div class="collapse mt-3" id="otherCollapse">
+          <div class="card card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Quantity (oz)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ingredient A</td>
+                  <td id="ingredientAQtd">5</td>
+                </tr>
+                <tr>
+                  <td>Ingredient B</td>
+                  <td id="ingredientBQty">2</td>
+                </tr>
+                <tr>
+                  <td>Ingredient C</td>
+                  <td id="ingredientCQty">4</td>
+                </tr>
+                <!-- Add more ingredients here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const recipeSizeInput = document.getElementById('recipeSize');
+      const ingredientQuantities = {
+        dandelionLeaf: 4,
+        borage: 3,
+        peppermintLeaf: 3,
+        lavender: 1,
+        lemongrass: 3,
+        honeysuckle: 2
+      };
+
+      function updateIngredientQuantities() {
+        const size = parseFloat(recipeSizeInput.value);
+        if (!isNaN(size) && size > 0) {
+          for (const ingredient in ingredientQuantities) {
+            const ingredientQtyElement = document.getElementById(`${ingredient}Qty`);
+            ingredientQtyElement.textContent = (ingredientQuantities[ingredient] * size / 16).toFixed(2);
+          }
+        }
+      }
+
+      recipeSizeInput.addEventListener('input', updateIngredientQuantities);
+
+      // Initial calculation on page load
+      updateIngredientQuantities();
+    });
+  </script>
+</body>
+
+</html>

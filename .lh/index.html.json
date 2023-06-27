@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 30,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -124,6 +124,10 @@
                 {
                     "date": 1687892427151,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,5 +178,5 @@\n     });\r\n   </script>\r\n </body>\r\n \r\n-</html> \n\\ No newline at end of file\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1687892620985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,14 @@\n   <!-- Main content -->\r\n   <main>\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container\">\r\n+        <!-- Recipe size input -->\r\n+        <div class=\"mb-3\">\r\n+          <label for=\"recipeSize\" class=\"form-label\">Recipe Size (oz):</label>\r\n+          <input type=\"number\" class=\"form-control\" id=\"recipeSize\" value=\"16\">\r\n+        </div>\r\n+\r\n         <h1>Select a Tea</h1>\r\n \r\n         <!-- Air button -->\r\n         <button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#airCollapse\"\r\n@@ -103,58 +109,8 @@\n               </tbody>\r\n             </table>\r\n           </div>\r\n         </div>\r\n-\r\n-        <!-- Template button -->\r\n-        <button class=\"btn btn-primary mt-3\" type=\"button\" data-bs-toggle=\"collapse\"\r\n-          data-bs-target=\"#templateCollapse\" aria-expanded=\"false\" aria-controls=\"templateCollapse\">\r\n-          Template Tea\r\n-        </button>\r\n-        <div class=\"collapse mt-3\" id=\"templateCollapse\">\r\n-          <div class=\"card card-body\">\r\n-            <table class=\"table\">\r\n-              <thead>\r\n-                <tr>\r\n-                  <th>Ingredient</th>\r\n-                  <th>Quantity (oz)</th>\r\n-                </tr>\r\n-              </thead>\r\n-              <tbody>\r\n-                <tr>\r\n-                  <td>Ingredient 1</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient1\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-                <tr>\r\n-                  <td>Ingredient 2</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient2\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-                <tr>\r\n-                  <td>Ingredient 3</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient3\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-                <tr>\r\n-                  <td>Ingredient 4</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient4\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-                <tr>\r\n-                  <td>Ingredient 5</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient5\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-                <tr>\r\n-                  <td>Ingredient 6</td>\r\n-                  <td class=\"ingredientQty\" data-ingredient=\"ingredient6\" data-base-quantity=\"0\">0</td>\r\n-                </tr>\r\n-              </tbody>\r\n-            </table>\r\n-          </div>\r\n-        </div>\r\n-\r\n-        <!-- Recipe size input -->\r\n-        <div class=\"mt-3\">\r\n-          <label for=\"recipeSize\" class=\"form-label\">Recipe Size (oz):</label>\r\n-          <input type=\"number\" class=\"form-control\" id=\"recipeSize\" value=\"16\">\r\n-        </div>\r\n       </div>\r\n     </section>\r\n \r\n   </main>\r\n"
                 }
             ],
             "date": 1687887063545,

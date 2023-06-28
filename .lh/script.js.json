@@ -1,0 +1,18 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1687969306500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1687969306500,
+            "name": "Commit-0",
+            "content": "const teaSelection = document.getElementById('teaSelection');\r\n    const recipeSizeInput = document.getElementById('recipeSize');\r\n    const teaTables = document.getElementById('teaTables');\r\n    const tables = teaTables.querySelectorAll('table');\r\n\r\n    function updateIngredientQuantities(tea) {\r\n      const recipeSize = parseInt(recipeSizeInput.value);\r\n      const baseQuantities = {\r\n        air: { dandelionLeaf: 4, borage: 3, peppermintLeaf: 3, lavender: 1, lemongrass: 3, honeysuckle: 2 },\r\n        aphroditea: { dehydratedApples: 3, rosePetals: 4, rosehips: 3, linden: 2, oregano: 1, hawthornBerries: 3 },\r\n        aquarius: { jasmineGreenTea: 6, jasmineFlowers: 3, lavender: 3, honeysuckle: 2},\r\n        aries: {lemonBalm: 4, gingerRoot: 5, blessedThistle: 2, rosemary: 3, nettleLeaf: 2},\r\n        asclepius: {tulsi: 5,  chamomile: 4, lemongrass: 2, lemonPeel: 2, stJohnsWort: 2, peppermintLeaf: 1},\r\n        bloodMoon: {hibiscusFlower: 3, hawthornLeaf: 3, hawthornBerries: 3, calendula: 1, oatBuds: 2, rosePetals: 2, dehydratedApples: 2},\r\n\r\n        // Add new tea base quantities below\r\n        // new_tea: { ingredient1: quantity1, ingredient2: quantity2, ... }\r\n      };\r\n      const ingredients = baseQuantities[tea];\r\n\r\n      for (const ingredient in ingredients) {\r\n        const quantityElement = document.querySelector(`#${tea}Table .ingredientQty[data-ingredient=\"${ingredient}\"]`);\r\n        const baseQuantity = ingredients[ingredient];\r\n        const calculatedQuantity = (baseQuantity / 16) * recipeSize;\r\n        quantityElement.textContent = calculatedQuantity.toFixed(1);\r\n      }\r\n    }\r\n\r\n    function handleTeaSelection() {\r\n      const selectedTea = teaSelection.value;\r\n      tables.forEach(table => {\r\n        if (table.id === `${selectedTea}Table`) {\r\n          table.classList.remove('d-none');\r\n          updateIngredientQuantities(selectedTea);\r\n        } else {\r\n          table.classList.add('d-none');\r\n        }\r\n      });\r\n    }\r\n\r\n    // Event listeners\r\n    teaSelection.addEventListener('change', handleTeaSelection);\r\n    recipeSizeInput.addEventListener('input', handleTeaSelection);"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 82,
+            "activePatchIndex": 96,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -336,6 +336,62 @@
                 {
                     "date": 1688050725950,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -834,9 +834,9 @@\n               </tr>\r\n             </thead>\r\n             <tbody>\r\n               <tr>\r\n-                <td>Chamomile/td>\r\n+                <td>Chamomile</td>\r\n                 <td class=\"ingredientQty\" data-ingredient=\"chamomile\" data-base-quantity=\"5\">5</td>\r\n               </tr>\r\n               <tr>\r\n                 <td>Orange Peel</td>\r\n"
+                },
+                {
+                    "date": 1688057817770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   <title>The Cat and Kettle Batch Helper</title>\r\n   <!-- Bootstrap CSS -->\r\n   <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\r\n     integrity=\"sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM\" crossorigin=\"anonymous\">\r\n+    <link href=\"styles.css\" rel=\"stylesheet\">\r\n </head>\r\n \r\n <body>\r\n   <!-- Main content -->\r\n"
+                },
+                {
+                    "date": 1688058147205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,11 @@\n     <link href=\"styles.css\" rel=\"stylesheet\">\r\n </head>\r\n \r\n <body>\r\n+  <header>\r\n+    <img src=\"images/placeholder.jpg\" alt=\"Cat & Kettle Batch Helper Logo\" class=\"logo\">\r\n+  </header>\r\n   <!-- Main content -->\r\n   <main>\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1688058271936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,12 @@\n     <link href=\"styles.css\" rel=\"stylesheet\">\r\n </head>\r\n \r\n <body>\r\n-  <header>\r\n-    <img src=\"images/placeholder.jpg\" alt=\"Cat & Kettle Batch Helper Logo\" class=\"logo\">\r\n+  <header class=\"text-center\">\r\n+    <div class=\"container\">\r\n+      <img src=\"images/\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo\">\r\n+    </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n     <section id=\"section1\" class=\"py-5\">\r\n"
+                },
+                {
+                    "date": 1688058303014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688058724621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo logo mx-auto mw-100\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688058763310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo logo mx-auto mw-100\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo logo mx-auto mw-25\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688058804281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo logo mx-auto mw-25\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto mw-25\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688058892423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto mw-25\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 150px;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688058909995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 150px;\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 300px;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688059002621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 300px;\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 100%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688059029318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n <body>\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 100%;\">\r\n+      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main>\r\n"
+                },
+                {
+                    "date": 1688059365122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,14 @@\n   <!-- Main content -->\r\n   <main>\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container\">\r\n-        <h1>Select a Recipe Size</h1>\r\n-        <input id=\"recipeSize\" type=\"number\" min=\"1\" value=\"16\">\r\n+        <h1 class=\"text-center\">Select a Recipe Size</h1>\r\n+          <div class=\"row justify-content-center\">\r\n+            <div class=\"col-md-6\">\r\n+              <input id=\"recipeSize\" type=\"number\" min=\"1\" value=\"16\">\r\n+            </div>\r\n+          </div>\r\n         <h2>Select a Tea</h2>\r\n         <select id=\"teaSelection\" class=\"form-select\">\r\n           <option value=\"\">Choose a Tea</option>\r\n           <option value=\"air\">Air</option>\r\n"
+                },
+                {
+                    "date": 1688059419148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       <div class=\"container\">\r\n         <h1 class=\"text-center\">Select a Recipe Size</h1>\r\n           <div class=\"row justify-content-center\">\r\n             <div class=\"col-md-6\">\r\n-              <input id=\"recipeSize\" type=\"number\" min=\"1\" value=\"16\">\r\n+              <input id=\"recipeSize\" type=\"number\" min=\"1\" value=\"16\" class=\"form-control text-center\">\r\n             </div>\r\n           </div>\r\n         <h2>Select a Tea</h2>\r\n         <select id=\"teaSelection\" class=\"form-select\">\r\n"
+                },
+                {
+                    "date": 1688059579968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,15 +20,17 @@\n   <!-- Main content -->\r\n   <main>\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container\">\r\n-        <h1 class=\"text-center\">Select a Recipe Size</h1>\r\n+        <h2 class=\"text-center\">Select a Recipe Size</h2>\r\n           <div class=\"row justify-content-center\">\r\n             <div class=\"col-md-6\">\r\n               <input id=\"recipeSize\" type=\"number\" min=\"1\" value=\"16\" class=\"form-control text-center\">\r\n             </div>\r\n           </div>\r\n-        <h2>Select a Tea</h2>\r\n+        <h2 class=\"text-center\">Select a Tea</h2>\r\n+        <div class=\"row justify-content-center\">\r\n+          <div class=\"col-md-6\">\r\n         <select id=\"teaSelection\" class=\"form-select\">\r\n           <option value=\"\">Choose a Tea</option>\r\n           <option value=\"air\">Air</option>\r\n           <option value=\"aphroditea\">Aphroditea</option>\r\n@@ -72,8 +74,10 @@\n           <option value=\"virgo\">Virgo</option>\r\n           <option value=\"water\">Water</option>\r\n           <option value=\"wortMoon\">Wort Moon</option>\r\n         </select>\r\n+      </div>\r\n+    </div>\r\n \r\n         <div id=\"teaTables\" class=\"mt-3\">\r\n           <table id=\"airTable\" class=\"table d-none\">\r\n             <!-- Air Table Content -->\r\n"
                 }
             ],
             "date": 1687887063545,

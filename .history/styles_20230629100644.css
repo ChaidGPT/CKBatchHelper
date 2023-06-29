@@ -1,9 +1,8 @@
-.logo {
-    padding-top: 15px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
-}
-
-
+@media (min-width: 992px) {
+    .logo {
+      max-width: 200px; /* Adjust the max-width as needed */
+    }
+  }
 
 @keyframes fadeIn {
     from {

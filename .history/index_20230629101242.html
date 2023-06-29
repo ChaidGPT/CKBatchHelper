@@ -14,22 +14,16 @@
 <body>
   <header class="text-center">
     <div class="container">
-      <img src="images/placeholder.jpg" alt="The Cat & Kettle Batch Helper Logo" class="img-fluid logo mx-auto" style="max-width: 25%;">
+      <img src="images/placeholder.jpg" alt="The Cat & Kettle Batch Helper Logo" class="img-fluid logo logo mx-auto mw-25">
     </div>
   </header>
   <!-- Main content -->
   <main>
     <section id="section1" class="py-5">
       <div class="container">
-        <h2 class="text-center">Select a Recipe Size</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <input id="recipeSize" type="number" min="1" value="16" class="form-control text-center">
-            </div>
-          </div>
-        <h2 class="text-center">Select a Tea</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
+        <h1>Select a Recipe Size</h1>
+        <input id="recipeSize" type="number" min="1" value="16">
+        <h2>Select a Tea</h2>
         <select id="teaSelection" class="form-select">
           <option value="">Choose a Tea</option>
           <option value="air">Air</option>
@@ -75,8 +69,6 @@
           <option value="water">Water</option>
           <option value="wortMoon">Wort Moon</option>
         </select>
-      </div>
-    </div>
 
         <div id="teaTables" class="mt-3">
           <table id="airTable" class="table d-none">

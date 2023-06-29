@@ -1,7 +1,8 @@
-.logo {
-    padding-top: 15px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
-}
+@media (min-width: 200px) {
+    .logo {
+      max-width: 300px; /* Adjust the max-width as needed */
+    }
+  }
 
 
 

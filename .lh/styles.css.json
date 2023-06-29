@@ -1,0 +1,54 @@
+{
+    "sourceFile": "styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1688057864051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688058287882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+\r\n+\r\n+@keyframes fadeIn {\r\n+    from {\r\n+      opacity: 0;\r\n+    }\r\n+    to {\r\n+      opacity: 1;\r\n+    }\r\n+  }\r\n+  \r\n+  .fade-in {\r\n+    animation: fadeIn 0.5s ease-in-out;\r\n+  }  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688058404453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,10 @@\n-\r\n-\r\n-@keyframes fadeIn {\r\n-    from {\r\n-      opacity: 0;\r\n+@media (min-width: 992px) {\r\n+    .logo {\r\n+      max-width: 200px; /* Adjust the max-width as needed */\r\n     }\r\n-    to {\r\n-      opacity: 1;\r\n-    }\r\n   }\r\n-  \r\n-  .fade-in {\r\n-    animation: fadeIn 0.5s ease-in-out;\r\n-  }  \n+\r\n @keyframes fadeIn {\r\n     from {\r\n       opacity: 0;\r\n     }\r\n"
+                },
+                {
+                    "date": 1688058528030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n-@media (min-width: 992px) {\r\n+@media (min-width: 200px) {\r\n     .logo {\r\n       max-width: 200px; /* Adjust the max-width as needed */\r\n     }\r\n   }\r\n \r\n+\r\n+\r\n @keyframes fadeIn {\r\n     from {\r\n       opacity: 0;\r\n     }\r\n"
+                },
+                {
+                    "date": 1688058545430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @media (min-width: 200px) {\r\n     .logo {\r\n-      max-width: 200px; /* Adjust the max-width as needed */\r\n+      max-width: 300px; /* Adjust the max-width as needed */\r\n     }\r\n   }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1688058582183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@media (min-width: 200px) {\r\n+@media (min-width: 100px) {\r\n     .logo {\r\n       max-width: 300px; /* Adjust the max-width as needed */\r\n     }\r\n   }\r\n"
+                },
+                {
+                    "date": 1688058630499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-@media (min-width: 100px) {\r\n+@media (min-width: 992px) {\r\n     .logo {\r\n-      max-width: 300px; /* Adjust the max-width as needed */\r\n+      max-width: 200px; /* Adjust the max-width as needed */\r\n     }\r\n   }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1688058737496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,8 @@\n-@media (min-width: 992px) {\r\n-    .logo {\r\n-      max-width: 200px; /* Adjust the max-width as needed */\r\n-    }\r\n-  }\r\n \r\n \r\n \r\n+\r\n @keyframes fadeIn {\r\n     from {\r\n       opacity: 0;\r\n     }\r\n"
+                },
+                {
+                    "date": 1688059055854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n+.logo {\r\n+    padding-top: 15px;\r\n+}\r\n \r\n \r\n \r\n-\r\n @keyframes fadeIn {\r\n     from {\r\n       opacity: 0;\r\n     }\r\n"
+                },
+                {
+                    "date": 1688059147361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .logo {\r\n     padding-top: 15px;\r\n+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n }\r\n \r\n \r\n \r\n"
+                }
+            ],
+            "date": 1688057864051,
+            "name": "Commit-0",
+            "content": "@keyframes fadeIn {\r\n    from {\r\n      opacity: 0;\r\n    }\r\n    to {\r\n      opacity: 1;\r\n    }\r\n  }\r\n  \r\n  .fade-in {\r\n    animation: fadeIn 0.5s ease-in-out;\r\n  }  "
+        }
+    ]
+}

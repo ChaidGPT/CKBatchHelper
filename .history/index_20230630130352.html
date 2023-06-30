@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cat and Kettle Batch Helper</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="border d-flex flex-column">
+  <header class="text-center">
+    <div class="container">
+      <img src="images/placeholder.jpg" alt="The Cat & Kettle Batch Helper Logo" class="img-fluid logo mx-auto" style="max-width: 25%;">
+    </div>
+  </header>
+  <!-- Main content -->
+  <main class="flex-grow-1">
+    <section id="section1" class="py-5">
+      <div class="container text-center">
+        <h2 class="text-center">Select a Recipe Size</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <input id="recipeSize" type="number" min="1" value="16" class="form-control text-center">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <h2 class="text-center">Select a Tea</h2>
+              <select id="teaSelection" class="form-select centered-dropdown">
+          <option value="">Choose a Tea</option>
+          <option value="air">Air</option>
+          <option value="aphroditea">Aphroditea</option>
+          <option value="aquarius">Aquarius</option>
+          <option value="aries">Aries</option>
+          <option value="asclepius">Asclepius</option>
+          <option value="bloodMoon">Blood Moon</option>
+          <option value="blueMoon">Blue Moon</option>
+          <option value="brightMoon">Bright Moon</option>
+          <option value="cancer">Cancer</option>
+          <option value="capricorn">Capricorn</option>
+          <option value="chiron">Chiron</option>
+          <option value="coldMoon">Cold Moon</option>
+          <option value="cronus">Cronus</option>
+          <option value="crowMoon">Crow Moon</option>
+          <option value="demeter">Demeter</option>
+          <option value="dionysus">Dionysus</option>
+          <option value="earth">Earth</option>
+          <option value="eos">Eos</option>
+          <option value="eros">Eros</option>
+          <option value="fire">Fire</option>
+          <option value="flora">Flora</option>
+          <option value="gemini">Gemini</option>
+          <option value="grainMoon">Grain Moon</option>
+          <option value="hades">Hades</option>
+          <option value="harvestMoon">Harvest Moon</option>
+          <option value="hebe">Hebe</option>
+          <option value="leo">Leo</option>
+          <option value="libra">Libra</option>
+          <option value="mourningMoon">Mourning Moon</option>
+          <option value="persephone">Persephone</option>
+          <option value="pisces">Pisces</option>
+          <option value="pomona">Pomona</option>
+          <option value="quietMoon">Quiet Moon</option>
+          <option value="rhea">Rhea</option>
+          <option value="sagittarius">Sagittarius</option>
+          <option value="sappho">Sappho</option>
+          <option value="scorpio">Scorpio</option>
+          <option value="snowMoon">Snow Moon</option>
+          <option value="sproutMoon">Sprout Moon</option>
+          <option value="virgo">Virgo</option>
+          <option value="water">Water</option>
+          <option value="wortMoon">Wort Moon</option>
+        </select>
+      </div>
+    </div>
+
+        <div id="teaTables" class="mt-3">
+          <table id="airTable" class="table d-none">
+            <!-- Air Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dandelion Leaf</td>
+                <td class="ingredientQty" data-ingredient="dandelionLeaf" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Borage</td>
+                <td class="ingredientQty" data-ingredient="borage" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Peppermint Leaf</td>
+                <td class="ingredientQty" data-ingredient="peppermintLeaf" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Lavender</td>
+                <td class="ingredientQty" data-ingredient="lavender" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Lemongrass</td>
+                <td class="ingredientQty" data-ingredient="lemongrass" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Honeysuckle</td>
+                <td class="ingredientQty" data-ingredient="honeysuckle" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="aphroditeaTable" class="table d-none">
+            <!-- Aphroditea Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dehydrated Apples</td>
+                <td class="ingredientQty" data-ingredient="dehydratedApples" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Rose Petals</td>
+                <td class="ingredientQty" data-ingredient="rosePetals" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Rosehips</td>
+                <td class="ingredientQty" data-ingredient="rosehips" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Linden</td>
+                <td class="ingredientQty" data-ingredient="linden" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Oregano</td>
+                <td class="ingredientQty" data-ingredient="oregano" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Hawthorn Berries</td>
+                <td class="ingredientQty" data-ingredient="hawthornBerries" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="aquariusTable" class="table d-none">
+            <!-- Aquarius Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jasmine Green Tea</td>
+                <td class="ingredientQty" data-ingredient="jasmineGreenTea" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Jasmine Flowers</td>
+                <td class="ingredientQty" data-ingredient="jasmineFlowers" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Lavender</td>
+                <td class="ingredientQty" data-ingredient="lavender" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Honeysuckle</td>
+                <td class="ingredientQty" data-ingredient="honeysuckle" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="ariesTable" class="table d-none">
+            <!-- Aries Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lemon Balm</td>
+                <td class="ingredientQty" data-ingredient="lemonBalm" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Ginger Root</td>
+                <td class="ingredientQty" data-ingredient="gingerRoot" data-base-quantity="5">5</td>
+              </tr>
+              <tr>
+                <td>Blessed Thistle</td>
+                <td class="ingredientQty" data-ingredient="blessedThistle" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Rosemary</td>
+                <td class="ingredientQty" data-ingredient="rosemary" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Nettle Leaf</td>
+                <td class="ingredientQty" data-ingredient="nettleLeaf" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="asclepiusTable" class="table d-none">
+            <!-- Asclepius Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tulsi</td>
+                <td class="ingredientQty" data-ingredient="tulsi" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Chamomile</td>
+                <td class="ingredientQty" data-ingredient="chamomile" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Lemongrass</td>
+                <td class="ingredientQty" data-ingredient="lemongrass" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Lemon Peel</td>
+                <td class="ingredientQty" data-ingredient="lemonPeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>St. John's Wort</td>
+                <td class="ingredientQty" data-ingredient="stJohnsWort" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Peppermint Leaf</td>
+                <td class="ingredientQty" data-ingredient="peppermintLeaf" data-base-quantity="1">1</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="bloodMoonTable" class="table d-none">
+            <!-- Blood Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hibiscus Flower</td>
+                <td class="ingredientQty" data-ingredient="hibiscusFlower" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Hawthorn Leaf</td>
+                <td class="ingredientQty" data-ingredient="hawthornLeaf" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Hawthorn Berries</td>
+                <td class="ingredientQty" data-ingredient="hawthornBerries" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Calendula</td>
+                <td class="ingredientQty" data-ingredient="calendula" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Oat Bunds</td>
+                <td class="ingredientQty" data-ingredient="oatBuds" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Rose Petals</td>
+                <td class="ingredientQty" data-ingredient="rosePetals" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Dehydrated Apples</td>
+                <td class="ingredientQty" data-ingredient="dehydratedApples" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="blueMoonTable" class="table d-none">
+            <!-- Blue Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Elder Flowers</td>
+                <td class="ingredientQty" data-ingredient="elderFlowers" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Star Anise</td>
+                <td class="ingredientQty" data-ingredient="starAnise" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Nutmeg</td>
+                <td class="ingredientQty" data-ingredient="nutmeg" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Mugwort</td>
+                <td class="ingredientQty" data-ingredient="mugwort" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Hops Flowers</td>
+                <td class="ingredientQty" data-ingredient="hopsFlowers" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Butterfly Pea Flower</td>
+                <td class="ingredientQty" data-ingredient="butterflyPeaFlower" data-base-quantity="4">4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="brightMoonTable" class="table d-none">
+            <!-- Bright Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Spearmint Leaf</td>
+                <td class="ingredientQty" data-ingredient="spearmintLeaf" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Rose Petals</td>
+                <td class="ingredientQty" data-ingredient="rosePetals" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Borage</td>
+                <td class="ingredientQty" data-ingredient="borage" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Eulethero</td>
+                <td class="ingredientQty" data-ingredient="eulethero" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Elder Flowers</td>
+                <td class="ingredientQty" data-ingredient="elderFlowers" data-base-quantity="4">4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="cancerTable" class="table d-none">
+            <!-- Cancer Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chamomile</td>
+                <td class="ingredientQty" data-ingredient="chamomile" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Red Clover Blossoms</td>
+                <td class="ingredientQty" data-ingredient="redCloverBlossoms" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Lemon Verbena</td>
+                <td class="ingredientQty" data-ingredient="lemonVerbena" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Dandelion Leaf</td>
+                <td class="ingredientQty" data-ingredient="dandelionLeaf" data-base-quantity="4">4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="capricornTable" class="table d-none">
+            <!-- Capricorn Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rooibos</td>
+                <td class="ingredientQty" data-ingredient="rooibos" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Vanilla Bean</td>
+                <td class="ingredientQty" data-ingredient="vanillaBean" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Cinnamon</td>
+                <td class="ingredientQty" data-ingredient="cinnamon" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Cloves</td>
+                <td class="ingredientQty" data-ingredient="cloves" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="chironTable" class="table d-none">
+            <!-- Chiron Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sage</td>
+                <td class="ingredientQty" data-ingredient="sage" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Rosemary</td>
+                <td class="ingredientQty" data-ingredient="rosemary" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Turmeric</td>
+                <td class="ingredientQty" data-ingredient="turmeric" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Thyme</td>
+                <td class="ingredientQty" data-ingredient="thyme" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Dill</td>
+                <td class="ingredientQty" data-ingredient="dill" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Parsley</td>
+                <td class="ingredientQty" data-ingredient="parsley" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Peppercorns</td>
+                <td class="ingredientQty" data-ingredient="peppercorns" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="coldMoonTable" class="table d-none">
+            <!-- Cold Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Damiana</td>
+                <td class="ingredientQty" data-ingredient="damiana" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Juniper Berries</td>
+                <td class="ingredientQty" data-ingredient="juniperBerries" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Cinnamon</td>
+                <td class="ingredientQty" data-ingredient="cinnamon" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Rosehips</td>
+                <td class="ingredientQty" data-ingredient="rosehips" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Wild Cherry Bark</td>
+                <td class="ingredientQty" data-ingredient="wildCherryBark" data-base-quantity="4">4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="cronusTable" class="table d-none">
+            <!-- Cronus Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chamomile</td>
+                <td class="ingredientQty" data-ingredient="chamomile" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Ginger Root</td>
+                <td class="ingredientQty" data-ingredient="gingerRoot" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Spearmint Leaf</td>
+                <td class="ingredientQty" data-ingredient="spearmintLeaf" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Chaste Tree Berries</td>
+                <td class="ingredientQty" data-ingredient="chasteTreeBerries" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Fennel</td>
+                <td class="ingredientQty" data-ingredient="fennel" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="crowMoonTable" class="table d-none">
+            <!-- Crow Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dehydrated Apples</td>
+                <td class="ingredientQty" data-ingredient="dehydratedApples" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Goji Berries</td>
+                <td class="ingredientQty" data-ingredient="gojiBerries" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Tulsi</td>
+                <td class="ingredientQty" data-ingredient="tulsi" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Wild Cherry Bark</td>
+                <td class="ingredientQty" data-ingredient="wildCherryBark" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Calendula</td>
+                <td class="ingredientQty" data-ingredient="calendula" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="demeterTable" class="table d-none">
+            <!-- Demeter Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Raspberry Leaf</td>
+                <td class="ingredientQty" data-ingredient="raspberryLeaf" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Red Clover Blossoms</td>
+                <td class="ingredientQty" data-ingredient="redCloverBlossoms" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Cardamom</td>
+                <td class="ingredientQty" data-ingredient="cardamom" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Rosehips</td>
+                <td class="ingredientQty" data-ingredient="rosehips" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="dionysusTable" class="table d-none">
+            <!-- Dionysus Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hibiscus Flower</td>
+                <td class="ingredientQty" data-ingredient="hibiscusFlower" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Cinnamon</td>
+                <td class="ingredientQty" data-ingredient="cinnamon" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Lemon Peel</td>
+                <td class="ingredientQty" data-ingredient="lemonPeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Cloves</td>
+                <td class="ingredientQty" data-ingredient="cloves" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Star Anise</td>
+                <td class="ingredientQty" data-ingredient="starAnise" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="earthTable" class="table d-none">
+            <!-- Earth Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hawthorn Leaf</td>
+                <td class="ingredientQty" data-ingredient="hawthornLeaf" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Clover</td>
+                <td class="ingredientQty" data-ingredient="clover" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Blackberry Leaf</td>
+                <td class="ingredientQty" data-ingredient="blackberryLeaf" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Oat Straw</td>
+                <td class="ingredientQty" data-ingredient="oatStraw" data-base-quantity="4">4</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="eosTable" class="table d-none">
+            <!-- Eos Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Roasted Dandelion Root</td>
+                <td class="ingredientQty" data-ingredient="roastedDandelionRoot" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Roasted Chicory Root</td>
+                <td class="ingredientQty" data-ingredient="roastedChicoryRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Maca Root</td>
+                <td class="ingredientQty" data-ingredient="macaRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Ginger Root</td>
+                <td class="ingredientQty" data-ingredient="gingerRoot" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Cinnamon</td>
+                <td class="ingredientQty" data-ingredient="cinnamon" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Reishi</td>
+                <td class="ingredientQty" data-ingredient="reishi" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="1">1</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="erosTable" class="table d-none">
+            <!-- Eros Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sarsparilla</td>
+                <td class="ingredientQty" data-ingredient="sarsparilla" data-base-quantity="1.5">1.5</td>
+              </tr>
+              <tr>
+                <td>Goji Berries</td>
+                <td class="ingredientQty" data-ingredient="gojiBerries" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Beetroot</td>
+                <td class="ingredientQty" data-ingredient="beetroot" data-base-quantity="2.5">2.5</td>
+              </tr>
+              <tr>
+                <td>Astragalus</td>
+                <td class="ingredientQty" data-ingredient="astragalus" data-base-quantity="1.5">1.5</td>
+              </tr>
+              <tr>
+                <td>Cacao Nibs</td>
+                <td class="ingredientQty" data-ingredient="cacaoNibs" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Ashwaganda</td>
+                <td class="ingredientQty" data-ingredient="ashwaganda" data-base-quantity="1.5">1.5</td>
+              </tr>
+              <tr>
+                <td>Dandelion Root</td>
+                <td class="ingredientQty" data-ingredient="dandelionRoot" data-base-quantity="2.5">2.5</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="fireTable" class="table d-none">
+            <!-- Fire Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rooibos</td>
+                <td class="ingredientQty" data-ingredient="rooibos" data-base-quantity="8">8</td>
+              </tr>
+              <tr>
+                <td>Calendula</td>
+                <td class="ingredientQty" data-ingredient="calendula" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Ginger Root</td>
+                <td class="ingredientQty" data-ingredient="gingerRoot" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Cinnamon</td>
+                <td class="ingredientQty" data-ingredient="cinnamon" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="floraTable" class="table d-none">
+            <!-- Flora Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rooibos</td>
+                <td class="ingredientQty" data-ingredient="rooibos" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Calendula</td>
+                <td class="ingredientQty" data-ingredient="calendula" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Rose Petals</td>
+                <td class="ingredientQty" data-ingredient="rosePetals" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Lemon Peel</td>
+                <td class="ingredientQty" data-ingredient="lemonPeel" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="geminiTable" class="table d-none">
+            <!-- Gemini Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Honeysuckle</td>
+                <td class="ingredientQty" data-ingredient="honeysuckle" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>California Poppy</td>
+                <td class="ingredientQty" data-ingredient="californiaPoppy" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Oat Buds</td>
+                <td class="ingredientQty" data-ingredient="oatBuds" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Oat Straw</td>
+                <td class="ingredientQty" data-ingredient="oatStraw" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="grainMoonTable" class="table d-none">
+            <!-- Grain Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chamomile</td>
+                <td class="ingredientQty" data-ingredient="chamomile" data-base-quantity="5">5</td>
+              </tr>
+              <tr>
+                <td>Orange Peel</td>
+                <td class="ingredientQty" data-ingredient="orangePeel" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Astragalus</td>
+                <td class="ingredientQty" data-ingredient="astragalus" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Eulethero</td>
+                <td class="ingredientQty" data-ingredient="eulethero" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="hadesTable" class="table d-none">
+            <!-- Hades Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Spearmint Leaf</td>
+                <td class="ingredientQty" data-ingredient="spearmintLeaf" data-base-quantity="6">6</td>
+              </tr>
+              <tr>
+                <td>Calendula</td>
+                <td class="ingredientQty" data-ingredient="calendula" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Juniper Berries</td>
+                <td class="ingredientQty" data-ingredient="juniperBerries" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>California Poppy</td>
+                <td class="ingredientQty" data-ingredient="californiaPoppy" data-base-quantity="3">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="harvestMoonTable" class="table d-none">
+            <!-- HarvestMoon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fenugreek</td>
+                <td class="ingredientQty" data-ingredient="fenugreek" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Raspberry Leaf</td>
+                <td class="ingredientQty" data-ingredient="raspberryLeaf" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Oat Straw</td>
+                <td class="ingredientQty" data-ingredient="oatStraw" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Valerian Root</td>
+                <td class="ingredientQty" data-ingredient="valerianRoot" data-base-quantity="1">1</td>
+              </tr>
+              <tr>
+                <td>Fennel</td>
+                <td class="ingredientQty" data-ingredient="fennel" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Hops Flowers</td>
+                <td class="ingredientQty" data-ingredient="hopsFlowers" data-base-quantity="2">2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="hebeTable" class="table d-none">
+            <!-- Hebe Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lavender</td>
+                <td class="ingredientQty" data-ingredient="lavender" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Nettle Leaf</td>
+                <td class="ingredientQty" data-ingredient="nettleLeaf" data-base-quantity="2">2</td>
+              </tr>
+              <tr>
+                <td>Licorice Root</td>
+                <td class="ingredientQty" data-ingredient="licoriceRoot" data-base-quantity="3">3</td>
+              </tr>
+              <tr>
+                <td>Black Peppercorns</td>
+                <td class="ingredientQty" data-ingredient="peppercorns" data-base-quantity="4">4</td>
+              </tr>
+              <tr>
+                <td>Honeybush</td>
+                <td class="ingredientQty" data-ingredient="honeybush" data-base-quantity="5">5</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="leoTable" class="table d-none">
+            <!-- Leo Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="libraTable" class="table d-none">
+            <!-- Libra Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="mourningMoonTable" class="table d-none">
+            <!-- Mourning Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="persephoneTable" class="table d-none">
+            <!-- Persephone Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="piscesTable" class="table d-none">
+            <!-- Pisces Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="pomonaTable" class="table d-none">
+            <!-- Pomona Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="quietMoonTable" class="table d-none">
+            <!-- Quiet Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="rheaTable" class="table d-none">
+            <!-- Rhea Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="sagittariusTable" class="table d-none">
+            <!-- Sagittarius Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="sapphoTable" class="table d-none">
+            <!-- Sappho Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="scorpioTable" class="table d-none">
+            <!-- Scorpio Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="snowMoonTable" class="table d-none">
+            <!-- Snow Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="sproutMoonTable" class="table d-none">
+            <!-- Sprout Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="virgoTable" class="table d-none">
+            <!-- Virgo Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="waterTable" class="table d-none">
+            <!-- Water Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="wortMoonTable" class="table d-none">
+            <!-- Wort Moon Table Content -->
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity (oz)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ingredient 1</td>
+                <td class="ingredientQty" data-ingredient="ingredient1" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 2</td>
+                <td class="ingredientQty" data-ingredient="ingredient2" data-base-quantity="#">#</td>
+              </tr>
+              <tr>
+                <td>Ingredient 3</td>
+                <td class="ingredientQty" data-ingredient="ingredient3" data-base-quantity="#">#</td>
+              </tr>
+            </tbody>
+          </table>
+            </div>
+            </div>
+      
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+<footer class="footer py-3 text-center">
+  <div class="container">
+    <p>&copy; Chad Oswald</p>
+  </div>
+</footer>
+</html>

@@ -1,8 +1,6 @@
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .logo {
@@ -29,6 +27,8 @@ body {
 
 body {
   background-color: #e6dadc;
+  margin: 0;
+  padding: 0;
   border: 10px solid #363141;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ body {
 }
 
 main {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .footer {
@@ -45,9 +45,6 @@ main {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: auto;
-  margin-left: -10px;
-  margin-right: -10px;
-  border-top: 10px solid #363141;
 }
 
 @media (max-width: 767.98px) {

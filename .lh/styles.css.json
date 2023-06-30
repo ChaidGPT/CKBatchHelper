@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 25,
+            "activePatchIndex": 33,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -108,6 +108,38 @@
                 {
                     "date": 1688145580945,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,49 @@\n+html, body {\r\n+    height: 100%;\r\n+  }\r\n+\r\n+.logo {\r\n+    margin-top: 50px;\r\n+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n+}\r\n+\r\n+.centered-dropdown {\r\n+    text-align: center;\r\n+  }\r\n+\r\n+@keyframes fadeIn {\r\n+    from {\r\n+      opacity: 0;\r\n+    }\r\n+    to {\r\n+      opacity: 1;\r\n+    }\r\n+  }\r\n+  \r\n+  .fade-in {\r\n+    animation: fadeIn 0.5s ease-in-out;\r\n+  }  \r\n+\r\n+body {\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+        background-color: #E6dadc;\r\n+}\r\n+\r\n+main {\r\n+    flex-grow: 1;\r\n+}\r\n+\r\n+.footer {\r\n+    background-color: #363141;\r\n+    color: #E6dadc;\r\n+    padding-top: 5px;\r\n+    padding-bottom: 5px;\r\n+    margin-top: auto;\r\n+  }\r\n+\r\n+@media (max-width: 767.98px) {\r\n+    main {\r\n+      flex-grow: 0;\r\n+    }\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688155183955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n body {\r\n         display: flex;\r\n         flex-direction: column;\r\n         background-color: #E6dadc;\r\n+        border: 1px solid #363141;\r\n }\r\n \r\n main {\r\n     flex-grow: 1;\r\n@@ -45,55 +46,5 @@\n @media (max-width: 767.98px) {\r\n     main {\r\n       flex-grow: 0;\r\n     }\r\n-  }\n-html, body {\r\n-    height: 100%; /* Set the height of the HTML and body to 100% */\r\n-  }\r\n-\r\n-.logo {\r\n-    margin-top: 50px;\r\n-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n-}\r\n-\r\n-.centered-dropdown {\r\n-    text-align: center;\r\n-  }\r\n-\r\n-@keyframes fadeIn {\r\n-    from {\r\n-      opacity: 0;\r\n-    }\r\n-    to {\r\n-      opacity: 1;\r\n-    }\r\n-  }\r\n-  \r\n-  .fade-in {\r\n-    animation: fadeIn 0.5s ease-in-out;\r\n-  }  \r\n-\r\n-  body{\r\n-    background-color: #E6dadc;\r\n-    display: flex;\r\n-    flex-direction: column;\r\n-    min-height: 100vh;\r\n-}\r\n-\r\n-main {\r\n-    flex: 1;\r\n-}\r\n-\r\n-.footer {\r\n-    background-color: #363141;\r\n-    color: #E6dadc;\r\n-    padding-top: 5px;\r\n-    padding-bottom: 5px;\r\n-    margin-top: auto;\r\n-}\r\n-\r\n-@media (max-width: 767.98px) {\r\n-    main {\r\n-      flex-grow: 0;\r\n-    }\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688155222487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n body {\r\n         display: flex;\r\n         flex-direction: column;\r\n         background-color: #E6dadc;\r\n-        border: 1px solid #363141;\r\n+        border: 10px solid #363141;\r\n }\r\n \r\n main {\r\n     flex-grow: 1;\r\n"
+                },
+                {
+                    "date": 1688155294702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,10 @@\n         display: flex;\r\n         flex-direction: column;\r\n         background-color: #E6dadc;\r\n         border: 10px solid #363141;\r\n+        margin: 0;\r\n+        padding: 0;\r\n }\r\n \r\n main {\r\n     flex-grow: 1;\r\n"
+                },
+                {
+                    "date": 1688155314495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n     color: #E6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: auto;\r\n+    margin-bottom: 0;\r\n   }\r\n \r\n @media (max-width: 767.98px) {\r\n     main {\r\n"
+                },
+                {
+                    "date": 1688155401999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,53 +1,57 @@\n-html, body {\r\n-    height: 100%;\r\n-  }\r\n+html,\r\n+body {\r\n+  height: 100%;\r\n+}\r\n \r\n .logo {\r\n-    margin-top: 50px;\r\n-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n+  margin-top: 50px;\r\n+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);\r\n }\r\n \r\n .centered-dropdown {\r\n-    text-align: center;\r\n-  }\r\n+  text-align: center;\r\n+}\r\n \r\n @keyframes fadeIn {\r\n-    from {\r\n-      opacity: 0;\r\n-    }\r\n-    to {\r\n-      opacity: 1;\r\n-    }\r\n+  from {\r\n+    opacity: 0;\r\n   }\r\n-  \r\n-  .fade-in {\r\n-    animation: fadeIn 0.5s ease-in-out;\r\n-  }  \r\n+  to {\r\n+    opacity: 1;\r\n+  }\r\n+}\r\n \r\n+.fade-in {\r\n+  animation: fadeIn 0.5s ease-in-out;\r\n+}\r\n+\r\n body {\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        background-color: #E6dadc;\r\n-        border: 10px solid #363141;\r\n-        margin: 0;\r\n-        padding: 0;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n\\ No newline at end of file\n+  background-color: #e6dadc;\r\n+  margin: 0;\r\n+  padding: 0;\r\n }\r\n \r\n main {\r\n-    flex-grow: 1;\r\n+  flex-grow: 1;\r\n }\r\n \r\n .footer {\r\n-    background-color: #363141;\r\n-    color: #E6dadc;\r\n-    padding-top: 5px;\r\n-    padding-bottom: 5px;\r\n-    margin-top: auto;\r\n-    margin-bottom: 0;\r\n-  }\r\n+  background-color: #363141;\r\n+  color: #e6dadc;\r\n+  padding-top: 5px;\r\n+  padding-bottom: 5px;\r\n+  margin-top: auto;\r\n+  margin-bottom: 0;\r\n+}\r\n \r\n+.border {\r\n+  border: 10px solid #363141;\r\n+}\r\n+\r\n @media (max-width: 767.98px) {\r\n-    main {\r\n-      flex-grow: 0;\r\n-    }\r\n-  }\n+  main {\r\n+    flex-grow: 0;\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688155515051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,32 +25,29 @@\n   animation: fadeIn 0.5s ease-in-out;\r\n }\r\n \r\n body {\r\n-  display: flex;\r\n-  flex-direction: column;\r\n   background-color: #e6dadc;\r\n   margin: 0;\r\n   padding: 0;\r\n+  border: 10px solid #363141;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+  min-height: 100vh;\r\n }\r\n \r\n main {\r\n-  flex-grow: 1;\r\n+  flex: 1;\r\n }\r\n \r\n .footer {\r\n   background-color: #363141;\r\n   color: #e6dadc;\r\n   padding-top: 5px;\r\n   padding-bottom: 5px;\r\n   margin-top: auto;\r\n-  margin-bottom: 0;\r\n }\r\n \r\n-.border {\r\n-  border: 10px solid #363141;\r\n-}\r\n-\r\n @media (max-width: 767.98px) {\r\n   main {\r\n     flex-grow: 0;\r\n   }\r\n"
+                },
+                {
+                    "date": 1688155638105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n html,\r\n body {\r\n   height: 100%;\r\n+  margin: 0;\r\n+  padding: 0;\r\n }\r\n \r\n .logo {\r\n   margin-top: 50px;\r\n@@ -26,26 +28,26 @@\n }\r\n \r\n body {\r\n   background-color: #e6dadc;\r\n-  margin: 0;\r\n-  padding: 0;\r\n   border: 10px solid #363141;\r\n   display: flex;\r\n   flex-direction: column;\r\n   min-height: 100vh;\r\n }\r\n \r\n main {\r\n-  flex: 1;\r\n+  flex-grow: 1;\r\n }\r\n \r\n .footer {\r\n   background-color: #363141;\r\n   color: #e6dadc;\r\n   padding-top: 5px;\r\n   padding-bottom: 5px;\r\n   margin-top: auto;\r\n+  margin-left: -10px;\r\n+  margin-right: -10px;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n"
+                },
+                {
+                    "date": 1688155722506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n   padding-bottom: 5px;\r\n   margin-top: auto;\r\n   margin-left: -10px;\r\n   margin-right: -10px;\r\n+  border-top: 10px solid #363141;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n"
                 }
             ],
             "date": 1688057864051,

@@ -48,7 +48,14 @@ body::after {
     border-radius: 20px;
     z-index: -1;
   }
-  
+
+  .container-wrapper {
+    border: 10px solid #363141;
+    border-radius: 20px;
+    flex-grow: 1;
+    margin: 10px;
+    overflow: hidden;
+  }
 
 main {
   flex-grow: 1;

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 33,
+            "activePatchIndex": 41,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -140,6 +140,38 @@
                 {
                     "date": 1688155722506,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n   padding-bottom: 5px;\r\n   margin-top: auto;\r\n   margin-left: -10px;\r\n   margin-right: -10px;\r\n+  border-top: 10px solid #363141;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n"
+                },
+                {
+                    "date": 1688156748961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n   margin-top: auto;\r\n   margin-left: -10px;\r\n   margin-right: -10px;\r\n   border-top: 10px solid #363141;\r\n+  border-radius: 15px;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n"
+                },
+                {
+                    "date": 1688156772332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n   border: 10px solid #363141;\r\n   display: flex;\r\n   flex-direction: column;\r\n   min-height: 100vh;\r\n+  border-radius: 15px;\r\n }\r\n \r\n main {\r\n   flex-grow: 1;\r\n@@ -47,9 +48,8 @@\n   margin-top: auto;\r\n   margin-left: -10px;\r\n   margin-right: -10px;\r\n   border-top: 10px solid #363141;\r\n-  border-radius: 15px;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n"
+                },
+                {
+                    "date": 1688156915650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,20 @@\n   min-height: 100vh;\r\n   border-radius: 15px;\r\n }\r\n \r\n+body::after {\r\n+    content: \"\";\r\n+    position: absolute;\r\n+    top: -10px;\r\n+    left: -10px;\r\n+    right: -10px;\r\n+    bottom: -10px;\r\n+    border: 10px solid #363141;\r\n+    border-radius: 20px;\r\n+    z-index: -1;\r\n+  }\r\n+\r\n main {\r\n   flex-grow: 1;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1688156976465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n   display: flex;\r\n   flex-direction: column;\r\n   min-height: 100vh;\r\n   border-radius: 15px;\r\n+  overflow: hidden;\r\n }\r\n \r\n body::after {\r\n     content: \"\";\r\n"
+                },
+                {
+                    "date": 1688157243812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,16 @@\n     border-radius: 20px;\r\n     z-index: -1;\r\n   }\r\n \r\n+  .container-wrapper {\r\n+    border: 10px solid #363141;\r\n+    border-radius: 20px;\r\n+    flex-grow: 1;\r\n+    margin: 10px;\r\n+    overflow: hidden;\r\n+  }\r\n+\r\n main {\r\n   flex-grow: 1;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1688157258485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,17 +61,14 @@\n   flex-grow: 1;\r\n }\r\n \r\n .footer {\r\n-  background-color: #363141;\r\n-  color: #e6dadc;\r\n-  padding-top: 5px;\r\n-  padding-bottom: 5px;\r\n-  margin-top: auto;\r\n-  margin-left: -10px;\r\n-  margin-right: -10px;\r\n-  border-top: 10px solid #363141;\r\n-}\r\n+    background-color: #363141;\r\n+    color: #E6dadc;\r\n+    padding-top: 5px;\r\n+    padding-bottom: 5px;\r\n+    margin-top: 10px;\r\n+  }\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n     flex-grow: 0;\r\n"
+                },
+                {
+                    "date": 1688157279931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,26 +49,29 @@\n     z-index: -1;\r\n   }\r\n \r\n   .container-wrapper {\r\n-    border: 10px solid #363141;\r\n-    border-radius: 20px;\r\n-    flex-grow: 1;\r\n-    margin: 10px;\r\n-    overflow: hidden;\r\n-  }\r\n+  border: 10px solid #363141;\r\n+  border-radius: 20px;\r\n+  flex-grow: 1;\r\n+  margin: 10px;\r\n+  overflow: hidden;\r\n+}\r\n \r\n main {\r\n   flex-grow: 1;\r\n }\r\n \r\n .footer {\r\n-    background-color: #363141;\r\n-    color: #E6dadc;\r\n-    padding-top: 5px;\r\n-    padding-bottom: 5px;\r\n-    margin-top: 10px;\r\n-  }\r\n+  background-color: #363141;\r\n+  color: #e6dadc;\r\n+  padding-top: 5px;\r\n+  padding-bottom: 5px;\r\n+  margin-top: auto;\r\n+  margin-left: -10px;\r\n+  margin-right: -10px;\r\n+  border-top: 10px solid #363141;\r\n+}\r\n \r\n @media (max-width: 767.98px) {\r\n   main {\r\n     flex-grow: 0;\r\n"
+                },
+                {
+                    "date": 1688157289825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,17 +47,10 @@\n     border: 10px solid #363141;\r\n     border-radius: 20px;\r\n     z-index: -1;\r\n   }\r\n+  \r\n \r\n-  .container-wrapper {\r\n-  border: 10px solid #363141;\r\n-  border-radius: 20px;\r\n-  flex-grow: 1;\r\n-  margin: 10px;\r\n-  overflow: hidden;\r\n-}\r\n-\r\n main {\r\n   flex-grow: 1;\r\n }\r\n \r\n"
                 }
             ],
             "date": 1688057864051,

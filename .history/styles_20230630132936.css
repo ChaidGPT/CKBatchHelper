@@ -48,7 +48,6 @@ body::after {
     border-radius: 20px;
     z-index: -1;
   }
-  
 
 main {
   flex-grow: 1;

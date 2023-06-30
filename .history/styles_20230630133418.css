@@ -48,22 +48,26 @@ body::after {
     border-radius: 20px;
     z-index: -1;
   }
-  
+
+  .container-wrapper {
+    border: 10px solid #363141;
+    border-radius: 20px;
+    flex-grow: 1;
+    margin: 10px;
+    overflow: hidden;
+  }
 
 main {
   flex-grow: 1;
 }
 
 .footer {
-  background-color: #363141;
-  color: #e6dadc;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: auto;
-  margin-left: -10px;
-  margin-right: -10px;
-  border-top: 10px solid #363141;
-}
+    background-color: #363141;
+    color: #E6dadc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
 
 @media (max-width: 767.98px) {
   main {

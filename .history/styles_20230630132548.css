@@ -33,22 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-radius: 15px;
-  overflow: hidden;
 }
-
-body::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 10px solid #363141;
-    border-radius: 20px;
-    z-index: -1;
-  }
-  
 
 main {
   flex-grow: 1;
@@ -63,6 +48,7 @@ main {
   margin-left: -10px;
   margin-right: -10px;
   border-top: 10px solid #363141;
+  border-radius: 15px;
 }
 
 @media (max-width: 767.98px) {

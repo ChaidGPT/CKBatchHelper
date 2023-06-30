@@ -34,21 +34,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   border-radius: 15px;
-  overflow: hidden;
 }
-
-body::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 10px solid #363141;
-    border-radius: 20px;
-    z-index: -1;
-  }
-  
 
 main {
   flex-grow: 1;

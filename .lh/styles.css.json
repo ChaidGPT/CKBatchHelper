@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -96,6 +96,18 @@
                 {
                     "date": 1688144814853,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n }\r\n \r\n .footer {\r\n     background-color: #363141;\r\n+    color: #E6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1688145224301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     background-color: #363141;\r\n     color: #E6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 10px;\r\n+    margin-top: auto;\r\n }\r\n \r\n @media (max-width: 767.98px) {\r\n     main {\r\n"
+                },
+                {
+                    "date": 1688145398831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+html, body {\r\n+    height: 100%; /* Set the height of the HTML and body to 100% */\r\n+  }\r\n+\r\n .logo {\r\n     margin-top: 50px;\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n }\r\n@@ -26,8 +30,12 @@\n     flex-direction: column;\r\n     min-height: 100vh;\r\n }\r\n \r\n+main {\r\n+    flex: 1;\r\n+}\r\n+\r\n .footer {\r\n     background-color: #363141;\r\n     color: #E6dadc;\r\n     padding-top: 5px;\r\n"
+                },
+                {
+                    "date": 1688145580945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,49 @@\n+html, body {\r\n+    height: 100%;\r\n+  }\r\n+\r\n+.logo {\r\n+    margin-top: 50px;\r\n+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)\r\n+}\r\n+\r\n+.centered-dropdown {\r\n+    text-align: center;\r\n+  }\r\n+\r\n+@keyframes fadeIn {\r\n+    from {\r\n+      opacity: 0;\r\n+    }\r\n+    to {\r\n+      opacity: 1;\r\n+    }\r\n+  }\r\n+  \r\n+  .fade-in {\r\n+    animation: fadeIn 0.5s ease-in-out;\r\n+  }  \r\n+\r\n+body {\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+        background-color: #E6dadc;\r\n+}\r\n+\r\n+main {\r\n+    flex-grow: 1;\r\n+}\r\n+\r\n+.footer {\r\n+    background-color: #363141;\r\n+    color: #E6dadc;\r\n+    padding-top: 5px;\r\n+    padding-bottom: 5px;\r\n+    margin-top: auto;\r\n+  }\r\n+\r\n+@media (max-width: 767.98px) {\r\n+    main {\r\n+      flex-grow: 0;\r\n+    }\r\n+  }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1688057864051,

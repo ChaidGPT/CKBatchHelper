@@ -21,15 +21,15 @@
   }  
 
   body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-color: #E6dadc;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .footer {
-    background-color: #363141;
-    color: #E6dadc;
+    /* background-color: #00ABE4; */
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -64,6 +64,38 @@
                 {
                     "date": 1688067471509,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,12 @@\n   }\r\n   \r\n   .fade-in {\r\n     animation: fadeIn 0.5s ease-in-out;\r\n-  }  \n\\ No newline at end of file\n+  }  \r\n+\r\n+  body{\r\n+    background-size: cover;\r\n+    background-repeat: no-repeat;\r\n+    background-position: center;\r\n+    background-attachment: fixed;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688134065765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,6 @@\n     background-size: cover;\r\n     background-repeat: no-repeat;\r\n     background-position: center;\r\n     background-attachment: fixed;\r\n+    background-color: bisque;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688143939425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,6 @@\n     background-size: cover;\r\n     background-repeat: no-repeat;\r\n     background-position: center;\r\n     background-attachment: fixed;\r\n-    background-color: bisque;\r\n+    background-color: #E6dadc;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144069659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,12 @@\n     background-repeat: no-repeat;\r\n     background-position: center;\r\n     background-attachment: fixed;\r\n     background-color: #E6dadc;\r\n+}\r\n+\r\n+.footer {\r\n+    background-color: #00ABE4;\r\n+    padding-top: 5px;\r\n+    padding-bottom: 5px;\r\n+    margin-top: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144319124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     background-color: #E6dadc;\r\n }\r\n \r\n .footer {\r\n-    background-color: #00ABE4;\r\n+    /* background-color: #00ABE4; */\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144410666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,11 @@\n     /* background-color: #00ABE4; */\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+@media (max-width: 767.98px) {\r\n+    main {\r\n+      flex-grow: 0;\r\n+    }\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144501085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,12 @@\n     animation: fadeIn 0.5s ease-in-out;\r\n   }  \r\n \r\n   body{\r\n-    background-size: cover;\r\n-    background-repeat: no-repeat;\r\n-    background-position: center;\r\n-    background-attachment: fixed;\r\n     background-color: #E6dadc;\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    min-height: 100vh;\r\n }\r\n \r\n .footer {\r\n     /* background-color: #00ABE4; */\r\n"
+                },
+                {
+                    "date": 1688144632722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     min-height: 100vh;\r\n }\r\n \r\n .footer {\r\n-    /* background-color: #00ABE4; */\r\n+    background-color: #363141;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1688144814853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n }\r\n \r\n .footer {\r\n     background-color: #363141;\r\n+    color: #E6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n }\r\n"
                 }
             ],
             "date": 1688057864051,

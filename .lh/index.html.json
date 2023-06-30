@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 102,
+            "activePatchIndex": 111,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -416,6 +416,42 @@
                 {
                     "date": 1688063895331,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n           </div>\r\n           <div class=\"row justify-content-center\">\r\n             <div class=\"col-md-6 text-center\">\r\n               <h2 class=\"text-center\">Select a Tea</h2>\r\n-              <select id=\"teaSelection\" class=\"form-select\">\r\n+              <select id=\"teaSelection\" class=\"form-select centered-dropdown\">\r\n           <option value=\"\">Choose a Tea</option>\r\n           <option value=\"air\">Air</option>\r\n           <option value=\"aphroditea\">Aphroditea</option>\r\n           <option value=\"aquarius\">Aquarius</option>\r\n"
+                },
+                {
+                    "date": 1688144016035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1361,6 +1361,10 @@\n   <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\r\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n-\r\n+<footer class=\"footer\">\r\n+  <div class=\"container d-flex align-items-left justify-content-start\">\r\n+    <p>&copy; Chad Oswald</p>\r\n+  </div>\r\n+</footer>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144210938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     integrity=\"sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM\" crossorigin=\"anonymous\">\r\n     <link href=\"styles.css\" rel=\"stylesheet\">\r\n </head>\r\n \r\n-<body>\r\n+<body class=\"d-flex flex-column\">\r\n   <header class=\"text-center\">\r\n     <div class=\"container\">\r\n       <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1688144248692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n       <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n-  <main>\r\n+  <main class=\"flex-grow-1\">\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container text-center\">\r\n         <h2 class=\"text-center\">Select a Recipe Size</h2>\r\n           <div class=\"row justify-content-center\">\r\n"
+                },
+                {
+                    "date": 1688144293695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1362,9 +1362,9 @@\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n <footer class=\"footer\">\r\n-  <div class=\"container d-flex align-items-left justify-content-start\">\r\n+  <div class=\"bg-light py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144562486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1361,9 +1361,9 @@\n   <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\r\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n-<footer class=\"footer\">\r\n+<footer class=\"bg-light py-3 text-center fixed-bottom\">\r\n   <div class=\"bg-light py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1688144583976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1361,9 +1361,9 @@\n   <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\r\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n-<footer class=\"bg-light py-3 text-center fixed-bottom\">\r\n+<footer class=\"bg-light py-3 text-center\">\r\n   <div class=\"bg-light py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1688144664503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1361,9 +1361,9 @@\n   <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\r\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n-<footer class=\"bg-light py-3 text-center\">\r\n+<footer class=\"py-3 text-center\">\r\n   <div class=\"bg-light py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1688144674716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1362,9 +1362,9 @@\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n <footer class=\"py-3 text-center\">\r\n-  <div class=\"bg-light py-3 text-center\">\r\n+  <div class=\"py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688144782305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1361,9 +1361,9 @@\n   <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\r\n     integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\" crossorigin=\"anonymous\"></script>\r\n   <script src=\"script.js\"></script>\r\n </body>\r\n-<footer class=\"py-3 text-center\">\r\n+<footer class=\"footer py-3 text-center\">\r\n   <div class=\"py-3 text-center\">\r\n     <p>&copy; Chad Oswald</p>\r\n   </div>\r\n </footer>\r\n"
                 }
             ],
             "date": 1687887063545,

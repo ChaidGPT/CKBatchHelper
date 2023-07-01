@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 142,
+            "activePatchIndex": 146,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -576,6 +576,22 @@
                 {
                     "date": 1688221956246,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n   <!-- Main content -->\r\n   <main class=\"flex-grow-1\">\r\n     <section id=\"section1\" class=\"py-5\">\r\n       <div class=\"container\">\r\n-        <div class=\"card rounded-5\">\r\n+        <div class=\"card rounded-3\">\r\n           <div class=\"card-body\">\r\n             <h5 class=\"card-title text-center\">Tea Selection</h5>\r\n             <div class=\"form-group\">\r\n               <label for=\"recipeSize\">Select a Recipe Size:</label>\r\n"
+                },
+                {
+                    "date": 1688222869575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         </div>\r\n       </div>\r\n     </div>\r\n     <div class=\"container\">\r\n-      <img src=\"images/placeholder.jpg\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n+      <img src=\"images/logo.png\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main class=\"flex-grow-1\">\r\n"
+                },
+                {
+                    "date": 1688222892827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         </div>\r\n       </div>\r\n     </div>\r\n     <div class=\"container\">\r\n-      <img src=\"images/logo.png\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 25%;\">\r\n+      <img src=\"images/logo.png\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 50%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main class=\"flex-grow-1\">\r\n"
+                },
+                {
+                    "date": 1688223283987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n </head>\r\n \r\n <body class=\"container-wrapper d-flex flex-column min-vh-100\">\r\n   <header class=\"text-center\">\r\n-    <button class=\"custom-button position-absolute top-0 start-0 m-2\" data-bs-toggle=\"modal\" data-bs-target=\"#messageModal\">Instructions</button>\r\n+    <button class=\"custom-button position-absolute top-0 start-0 m-2 rounded\" data-bs-toggle=\"modal\" data-bs-target=\"#messageModal\">Instructions</button>\r\n     <!-- Modal code here -->\r\n     <div class=\"modal fade\" id=\"messageModal\" tabindex=\"-1\" aria-labelledby=\"messageModalLabel\" aria-hidden=\"true\">\r\n       <div class=\"modal-dialog\">\r\n         <div class=\"modal-content\">\r\n"
+                },
+                {
+                    "date": 1688223352606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         </div>\r\n       </div>\r\n     </div>\r\n     <div class=\"container\">\r\n-      <img src=\"images/logo.png\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 50%;\">\r\n+      <img src=\"images/logo2.png\" alt=\"The Cat & Kettle Batch Helper Logo\" class=\"img-fluid logo mx-auto\" style=\"max-width: 50%;\">\r\n     </div>\r\n   </header>\r\n   <!-- Main content -->\r\n   <main class=\"flex-grow-1\">\r\n"
                 }
             ],
             "date": 1687887063545,

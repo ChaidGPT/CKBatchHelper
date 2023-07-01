@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 82,
+            "activePatchIndex": 87,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -336,6 +336,26 @@
                 {
                     "date": 1688221931011,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\r\n \r\n   .card {\r\n     border: 2px solid #000;\r\n-    width: 300px;\r\n+    /* width: 300px; */\r\n     /* margin: 5px; */\r\n     /* min-width: 280px; */\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);\r\n }\r\n"
+                },
+                {
+                    "date": 1688222912501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   }\r\n   \r\n   /* General styles */\r\n   .logo {\r\n-    margin-top: 50px;\r\n+    margin-top: 25px;\r\n     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);\r\n   }\r\n \r\n   .card {\r\n"
+                },
+                {
+                    "date": 1688223060172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n   \r\n   /* General styles */\r\n   .logo {\r\n     margin-top: 25px;\r\n-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);\r\n+    margin-bottom: auto;\r\n+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */\r\n   }\r\n \r\n   .card {\r\n     border: 2px solid #000;\r\n"
+                },
+                {
+                    "date": 1688223076459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     /* width: 300px; */\r\n     /* margin: 5px; */\r\n     /* min-width: 280px; */\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);\r\n+    margin-top: auto;\r\n }\r\n   \r\n   .centered-dropdown {\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1688223087203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     /* width: 300px; */\r\n     /* margin: 5px; */\r\n     /* min-width: 280px; */\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);\r\n-    margin-top: auto;\r\n+    margin-top: 5px;\r\n }\r\n   \r\n   .centered-dropdown {\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1688223151436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   \r\n   /* General styles */\r\n   .logo {\r\n     margin-top: 25px;\r\n-    margin-bottom: auto;\r\n+    margin-bottom: 0;\r\n     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */\r\n   }\r\n \r\n   .card {\r\n@@ -17,9 +17,8 @@\n     /* width: 300px; */\r\n     /* margin: 5px; */\r\n     /* min-width: 280px; */\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);\r\n-    margin-top: 5px;\r\n }\r\n   \r\n   .centered-dropdown {\r\n     text-align: center;\r\n"
                 }
             ],
             "date": 1688057864051,

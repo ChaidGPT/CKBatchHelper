@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 64,
+            "activePatchIndex": 75,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -264,6 +264,50 @@
                 {
                     "date": 1688178605823,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 170px;\r\n+    margin-top: 190px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178846840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,13 @@\n   /* Footer styles */\r\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n-    padding-top: 5px;\r\n-    padding-bottom: 5px;\r\n-    margin-top: 190px;\r\n+    padding: 10px;\r\n+    position: fixed;\r\n+    left: 0;\r\n+    bottom: 0;\r\n+    width: 100%;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178884481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n+    margin-top: 20px;\r\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n"
+                },
+                {
+                    "date": 1688178920349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n+    max-height: fit-content;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178954553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n-    max-height: fit-content;\r\n+    max-height: 20px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178975906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n-    max-height: 20px;\r\n+    max-height: 30px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688179001945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n     margin-top: 20px;\r\n-    position: fixed;\r\n+    position:absolute;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     max-height: 30px;\r\n"
+                },
+                {
+                    "date": 1688179019954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n     margin-top: 20px;\r\n-    position:absolute;\r\n+    position:relative;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     max-height: 30px;\r\n"
+                },
+                {
+                    "date": 1688179036858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     position:relative;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n-    max-height: 30px;\r\n+    /* max-height: 30px; */\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688179078893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n     margin-top: 20px;\r\n-    position:relative;\r\n+    position:fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     /* max-height: 30px; */\r\n"
+                },
+                {
+                    "date": 1688179210795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,14 +56,12 @@\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n-    margin-top: 20px;\r\n-    position:fixed;\r\n+    position: absolute;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n-    /* max-height: 30px; */\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688179325626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding: 10px;\r\n-    position: absolute;\r\n+    position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n   }\r\n"
                 }
             ],
             "date": 1688057864051,

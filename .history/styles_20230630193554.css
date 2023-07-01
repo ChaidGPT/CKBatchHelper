@@ -57,10 +57,12 @@ html, body {
     background-color: #363141;
     color: #e6dadc;
     padding: 10px;
+    margin-top: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    max-height: 20px;
   }
   
   /* Container wrapper styles */

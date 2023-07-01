@@ -57,7 +57,7 @@ html, body {
     background-color: #363141;
     color: #e6dadc;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;

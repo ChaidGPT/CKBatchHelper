@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 127,
+            "activePatchIndex": 128,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -516,6 +516,10 @@
                 {
                     "date": 1688175869142,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1368,9 +1368,9 @@\n       \r\n     </section>\r\n \r\n   </main>\r\n-  <footer class=\"footer mt-auto py-3 text-center\">\r\n+  <footer class=\"footer mt-auto text-center\">\r\n     <div class=\"container\">\r\n       <p>&copy; Chad Oswald</p>\r\n     </div>\r\n   </footer>\r\n"
+                },
+                {
+                    "date": 1688178412289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1368,10 +1368,10 @@\n       \r\n     </section>\r\n \r\n   </main>\r\n-  <footer class=\"footer mt-auto text-center\">\r\n-    <div class=\"container\">\r\n+  <footer class=\"footer\">\r\n+    <div class=\"container d-flex align-items-left justify-content-start\">\r\n       <p>&copy; Chad Oswald</p>\r\n     </div>\r\n   </footer>\r\n   <!-- Bootstrap JS -->\r\n"
                 }
             ],
             "date": 1687887063545,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 57,
+            "activePatchIndex": 64,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -236,6 +236,34 @@
                 {
                     "date": 1688176238047,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,7 +80,13 @@\n       flex-grow: 0;\r\n     }\r\n   }  \r\n \r\n+  @media (max-width: 767.98px) {\r\n+    body {\r\n+      flex-direction: column; /* Revert back to column layout for small screens */\r\n+    }\r\n+\r\n   .content {\r\n     flex-grow: 1; /* Fill remaining vertical space */\r\n+    overflow-y: auto; /* Enable vertical scrolling for content */\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688178501590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,5 +88,6 @@\n \r\n   .content {\r\n     flex-grow: 1; /* Fill remaining vertical space */\r\n     overflow-y: auto; /* Enable vertical scrolling for content */\r\n-  }\n\\ No newline at end of file\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688178522703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    width: 100%;\r\n-    /* position: relative; */\r\n+    margin-top: 10px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178535453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n   /* Footer styles */\r\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n-    padding-top: 5px;\r\n+    padding-top: 50px;\r\n     padding-bottom: 5px;\r\n     margin-top: 10px;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1688178557624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,11 @@\n   /* Footer styles */\r\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n-    padding-top: 50px;\r\n+    padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 10px;\r\n+    margin-top: 50px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178573776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 50px;\r\n+    margin-top: 150px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178595536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 150px;\r\n+    margin-top: 170px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688178605823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     background-color: #363141;\r\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n-    margin-top: 170px;\r\n+    margin-top: 190px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
                 }
             ],
             "date": 1688057864051,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 52,
+            "activePatchIndex": 57,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -216,6 +216,26 @@
                 {
                     "date": 1688175290888,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,12 +39,12 @@\n     min-height: 100vh;\r\n     padding-bottom: 60px;\r\n   }\r\n \r\n-  .btn-custom-primary {\r\n-    background-color: #363141 !important;\r\n-    color: #e6dadc !important;\r\n-    border-color: #363141 !important;\r\n+  .custom-button {\r\n+    background-color: #363141;\r\n+    color: #e6dadc;\r\n+    border-color: #363141;\r\n   }\r\n   \r\n   /* Main content styles */\r\n   main {\r\n"
+                },
+                {
+                    "date": 1688175961218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     width: 100%;\r\n+    position: sticky;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688175990151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     width: 100%;\r\n-    position: sticky;\r\n+    position: relative;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688176057988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,9 @@\n   @media (min-width: 768px) {\r\n     .container-wrapper::after {\r\n       flex-grow: 0;\r\n     }\r\n-  }  \n\\ No newline at end of file\n+  }  \r\n+\r\n+  .content {\r\n+    flex-grow: 1; /* Fill remaining vertical space */\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688176067407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     color: #e6dadc;\r\n     padding-top: 5px;\r\n     padding-bottom: 5px;\r\n     width: 100%;\r\n-    position: relative;\r\n+    /* position: relative; */\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688176238047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,7 +80,13 @@\n       flex-grow: 0;\r\n     }\r\n   }  \r\n \r\n+  @media (max-width: 767.98px) {\r\n+    body {\r\n+      flex-direction: column; /* Revert back to column layout for small screens */\r\n+    }\r\n+\r\n   .content {\r\n     flex-grow: 1; /* Fill remaining vertical space */\r\n+    overflow-y: auto; /* Enable vertical scrolling for content */\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1688057864051,

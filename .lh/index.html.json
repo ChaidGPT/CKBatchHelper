@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 124,
+            "activePatchIndex": 127,
             "patches": [
                 {
                     "date": 1687887063545,
@@ -504,6 +504,18 @@
                 {
                     "date": 1688175629899,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,13 @@\n     <button class=\"custom-button position-absolute top-0 start-0 m-2\" data-bs-toggle=\"modal\" data-bs-target=\"#messageModal\">Instructions</button>    <div class=\"modal fade\" id=\"messageModal\" tabindex=\"-1\" aria-labelledby=\"messageModalLabel\" aria-hidden=\"true\">\r\n       <div class=\"modal-dialog\">\r\n         <div class=\"modal-content\">\r\n           <div class=\"modal-header\">\r\n-            <h5 class=\"modal-title\" id=\"messageModalLabel\">Message</h5>\r\n+            <h5 class=\"modal-title\" id=\"messageModalLabel\">Instructions</h5>\r\n             <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\r\n           </div>\r\n           <div class=\"modal-body\">\r\n-            <p>This is a message that appears when the button is clicked.</p>\r\n+            <p>Enter the oz of the batch size you would like to make in the \"Select a Recipe Size\" field, then choose the tea you would like to make from the \"Select a Tea\" dropdown menu. The app will give you the precise ingredient amounts needed to create a batch in the size you selected.</p>\r\n           </div>\r\n         </div>\r\n       </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1688175820151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     integrity=\"sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM\" crossorigin=\"anonymous\">\r\n     <link href=\"styles.css\" rel=\"stylesheet\">\r\n </head>\r\n \r\n-<body class=\"container-wrapper d-flex flex-column\">\r\n+<body class=\"container-wrapper d-flex flex-column min-vh-100\">\r\n   <header class=\"text-center\">\r\n     <button class=\"custom-button position-absolute top-0 start-0 m-2\" data-bs-toggle=\"modal\" data-bs-target=\"#messageModal\">Instructions</button>    <div class=\"modal fade\" id=\"messageModal\" tabindex=\"-1\" aria-labelledby=\"messageModalLabel\" aria-hidden=\"true\">\r\n       <div class=\"modal-dialog\">\r\n         <div class=\"modal-content\">\r\n"
+                },
+                {
+                    "date": 1688175848806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1368,9 +1368,9 @@\n       \r\n     </section>\r\n \r\n   </main>\r\n-  <footer class=\"footer py-3 text-center\">\r\n+  <footer class=\"footer mt-auto py-3 text-center\">\r\n     <div class=\"container\">\r\n       <p>&copy; Chad Oswald</p>\r\n     </div>\r\n   </footer>\r\n"
+                },
+                {
+                    "date": 1688175869142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1368,9 +1368,9 @@\n       \r\n     </section>\r\n \r\n   </main>\r\n-  <footer class=\"footer mt-auto py-3 text-center\">\r\n+  <footer class=\"footer mt-auto text-center\">\r\n     <div class=\"container\">\r\n       <p>&copy; Chad Oswald</p>\r\n     </div>\r\n   </footer>\r\n"
                 }
             ],
             "date": 1687887063545,

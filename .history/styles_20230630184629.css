@@ -59,7 +59,7 @@ html, body {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
-    /* position: relative; */
+    position: relative;
   }
   
   /* Container wrapper styles */
@@ -80,13 +80,3 @@ html, body {
       flex-grow: 0;
     }
   }  
-
-  @media (max-width: 767.98px) {
-    body {
-      flex-direction: column; /* Revert back to column layout for small screens */
-    }
-
-  .content {
-    flex-grow: 1; /* Fill remaining vertical space */
-    overflow-y: auto; /* Enable vertical scrolling for content */
-  }

@@ -24,12 +24,6 @@ html, body {
       opacity: 1;
     }
   }
-
-  .fade-in {
-    animation: fadeIn 0.5s ease-in-out;
-    animation-fill-mode: forwards; /* This will retain the final state of the animation */
-    opacity: 0; /* Set initial opacity to 0 */
-  }
   
   /* Body styles */
   body {
@@ -38,12 +32,6 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
     padding-bottom: 60px;
-  }
-
-  .custom-button {
-    background-color: #363141;
-    color: #e6dadc;
-    border-color: #363141;
   }
   
   /* Main content styles */

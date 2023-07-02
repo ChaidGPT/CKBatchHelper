@@ -95,9 +95,12 @@ html, body {
     body {
       flex-direction: column;
     }
-  
-    .content {
-      flex-grow: 1; /* Fill remaining vertical space */
-      overflow-y: auto; /* Enable vertical scrolling for content */
+    .container-wrapper {
+      padding-bottom: 0;
     }
-  }  
+
+  .content {
+    flex-grow: 1; /* Fill remaining vertical space */
+    overflow-y: auto; /* Enable vertical scrolling for content */
+  }
+}

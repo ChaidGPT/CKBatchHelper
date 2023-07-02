@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 87,
+            "activePatchIndex": 92,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -356,6 +356,26 @@
                 {
                     "date": 1688223151436,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   \r\n   /* General styles */\r\n   .logo {\r\n     margin-top: 25px;\r\n-    margin-bottom: auto;\r\n+    margin-bottom: 0;\r\n     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */\r\n   }\r\n \r\n   .card {\r\n@@ -17,9 +17,8 @@\n     /* width: 300px; */\r\n     /* margin: 5px; */\r\n     /* min-width: 280px; */\r\n     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);\r\n-    margin-top: 5px;\r\n }\r\n   \r\n   .centered-dropdown {\r\n     text-align: center;\r\n"
+                },
+                {
+                    "date": 1688224064229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,10 +92,13 @@\n   }  \r\n \r\n   @media (max-width: 767.98px) {\r\n     body {\r\n-      flex-direction: column; /* Revert back to column layout for small screens */\r\n+      flex-direction: column;\r\n     }\r\n+    .container {\r\n+      padding-bottom: 0;\r\n+    }\r\n \r\n   .content {\r\n     flex-grow: 1; /* Fill remaining vertical space */\r\n     overflow-y: auto; /* Enable vertical scrolling for content */\r\n"
+                },
+                {
+                    "date": 1688224111564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n   @media (max-width: 767.98px) {\r\n     body {\r\n       flex-direction: column;\r\n     }\r\n-    .container {\r\n+    .container-wrapper {\r\n       padding-bottom: 0;\r\n     }\r\n \r\n   .content {\r\n"
+                },
+                {
+                    "date": 1688224157009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,10 +94,10 @@\n   @media (max-width: 767.98px) {\r\n     body {\r\n       flex-direction: column;\r\n     }\r\n-    .container-wrapper {\r\n-      padding-bottom: 0;\r\n+    .logo {\r\n+      margin-bottom: 0;\r\n     }\r\n \r\n   .content {\r\n     flex-grow: 1; /* Fill remaining vertical space */\r\n"
+                },
+                {
+                    "date": 1688224195820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,10 @@\n   @media (max-width: 767.98px) {\r\n     body {\r\n       flex-direction: column;\r\n     }\r\n-    .logo {\r\n+    .container {\r\n+      padding-bottom: 0;\r\n       margin-bottom: 0;\r\n     }\r\n \r\n   .content {\r\n"
+                },
+                {
+                    "date": 1688224281079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,14 +94,10 @@\n   @media (max-width: 767.98px) {\r\n     body {\r\n       flex-direction: column;\r\n     }\r\n-    .container {\r\n-      padding-bottom: 0;\r\n-      margin-bottom: 0;\r\n+  \r\n+    .content {\r\n+      flex-grow: 1; /* Fill remaining vertical space */\r\n+      overflow-y: auto; /* Enable vertical scrolling for content */\r\n     }\r\n-\r\n-  .content {\r\n\\ No newline at end of file\n-    flex-grow: 1; /* Fill remaining vertical space */\r\n-    overflow-y: auto; /* Enable vertical scrolling for content */\r\n-  }\r\n-}\n+  }  \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1688057864051,

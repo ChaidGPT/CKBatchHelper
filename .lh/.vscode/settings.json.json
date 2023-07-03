@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1688342716311,
@@ -24,6 +24,10 @@
                 {
                     "date": 1688395818895,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n {\r\n     \"cSpell.words\": [\r\n+        \"Eulethero\",\r\n         \"Rooibos\",\r\n         \"rosehips\",\r\n         \"Shatavari\",\r\n         \"tulsi\"\r\n"
+                },
+                {
+                    "date": 1688397441124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n {\r\n     \"cSpell.words\": [\r\n+        \"aphroditea\",\r\n         \"Eulethero\",\r\n         \"Rooibos\",\r\n         \"rosehips\",\r\n         \"Shatavari\",\r\n"
                 }
             ],
             "date": 1688342716311,

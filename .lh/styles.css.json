@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 92,
+            "activePatchIndex": 95,
             "patches": [
                 {
                     "date": 1688057864051,
@@ -376,6 +376,18 @@
                 {
                     "date": 1688224281079,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,14 +94,10 @@\n   @media (max-width: 767.98px) {\r\n     body {\r\n       flex-direction: column;\r\n     }\r\n-    .container {\r\n-      padding-bottom: 0;\r\n-      margin-bottom: 0;\r\n+  \r\n+    .content {\r\n+      flex-grow: 1; /* Fill remaining vertical space */\r\n+      overflow-y: auto; /* Enable vertical scrolling for content */\r\n     }\r\n-\r\n-  .content {\r\n\\ No newline at end of file\n-    flex-grow: 1; /* Fill remaining vertical space */\r\n-    overflow-y: auto; /* Enable vertical scrolling for content */\r\n-  }\r\n-}\n+  }  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688397050567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,10 @@\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n+    padding-top: 10px;\r\n+    padding-bottom: 10px;\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688397099139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,10 +69,10 @@\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n-    padding-top: 10px;\r\n-    padding-bottom: 10px;\r\n+    margin-top: 10px;\r\n+\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
+                },
+                {
+                    "date": 1688397176176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,15 +64,14 @@\n   /* Footer styles */\r\n   .footer {\r\n     background-color: #363141;\r\n     color: #e6dadc;\r\n-    padding: 10px;\r\n+    padding: 5px;\r\n     position: fixed;\r\n     left: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     margin-top: 10px;\r\n-\r\n   }\r\n   \r\n   /* Container wrapper styles */\r\n   .container-wrapper {\r\n"
                 }
             ],
             "date": 1688057864051,

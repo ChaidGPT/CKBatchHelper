@@ -1,4 +1,2 @@
 # CKBatchHelper
-A simple web app to help the members of The Cat and Kettle calculate different recipe sizes when mixing their teas in bulk. 
-
-Made with HTML, JavaScript, and BootStrap.
+The Cat and Kettle Batch Helper is a user-friendly mobile web app designed to solve a common problem faced by The Cat and Kettle employees. It simplifies the calculation of precise ingredient amounts for 42 different herbal teas, eliminating errors and saving time. Just select a tea, enter the batch size, and get accurate measurements instantly. Built with HTML, CSS, Bootstrap, and JavaScript.
